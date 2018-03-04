@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GoogleFrom-Test</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <script type="text/javascript">
+    var submitted=false;
+  </script>
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='https://www.google.co.jp'}"></iframe>
+  <form action="https://docs.google.com/forms/d/e/1FAIpQLScSg_1Xdq_1LmaE7vQaY4d_7hjGhIrjYkshfN11QKAp_gEG4g/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true">
+    <label for="name">お名前</label>
+    <input id="name" type="text" name="entry.788573418" placeholder="山田太郎" required><br>
+    <label for="email">メールアドレス</label>
+    <input id="email" type="text" name="emailAddress" placeholder="example@mail.co.jp" required><br>
+    <label for="msg">お問い合わせ内容</label>
+    <textarea id="msg" name="entry.392546366" placeholder="お気軽にお問い合わせください。" required></textarea><br>
+    <input type="submit" name="button" value="送信">
+  </form>
+</body>
+</html>
+
